@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+*, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav.top-bar {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.top-bar ul>li a:not(.button) {
+  font-size: 20px;
+}
+
+.top-bar>ul .name h1 a {
+  font-size: 35px !important;
+}
+
+#network {
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#network li {
+  display: inline;
+  list-style: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#network img {
+  width: 25px;
+  height: 25px;
+}
+
+#network a:hover {
+  opacity: 0.5;
+}
+
+p {
+  font-size: 18px;
+}
+
+.images {
+  border: 1px solid black;
+  border-radius: 0 0 10px 10px;
+  min-height: 210px;
+  background-size: cover;
+}
+
+.images a {
+  display: block;
+  width: 100%;
+  min-height: 105px;
+  position: relative;
+}
+
+.ptitle {
+  background-color: #555;
+  color: #ccc;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 10px 10px 0 0;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.code, .site {
+  width: 100%;
+  min-height: 105px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  color: transparent;
+  font-size: 30px;
+}
+
+.site {
+  border-radius: 0 0 10px 10px;
+}
+
+.code:hover, .site:hover {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
