@@ -4,6 +4,10 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+/*body {
+  background: url('../images/cartographer.png') repeat;
+}*/
+
 .main {
   height: 2000px;
 }
@@ -20,4 +24,9 @@
   position: fixed;
   top: 176px;
   left: 53px;
+}
+
+.tech {
+  height: 150px;
+  width: auto;
 }
