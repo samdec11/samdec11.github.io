@@ -25,6 +25,10 @@ table.logo-presenter td {
   vertical-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 .big-gear {
   position: fixed;
   top: -250px;

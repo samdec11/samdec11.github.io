@@ -19,19 +19,22 @@ $(function() {
 });
 
 function intro() {
-  highlight('S');
+  $('svg').fadeIn(2000);
   setTimeout(function() {
-    highlight('E');
+    highlight('S');
     setTimeout(function() {
-      highlight('A');
+      highlight('E');
       setTimeout(function() {
-        highlight('N');
+        highlight('A');
         setTimeout(function() {
-          $('.overlay').fadeOut(2000);
+          highlight('N');
+          setTimeout(function() {
+            $('.overlay').fadeOut(2000);
+          }, 1000)
         }, 1000)
       }, 1000)
     }, 1000)
-  }, 1000);
+  }, 2000);
 };
 
 function highlight(letter) {
