@@ -29,7 +29,15 @@ function intro() {
         setTimeout(function() {
           highlight('N');
           setTimeout(function() {
-            $('.overlay').fadeOut(2000);
+            $('.left-line').css('stroke', '#ff9999');
+            $('.diag-line').css('stroke', '#99ff99');
+            $('.right-line').css('stroke', '#cc99ff');
+            $('.btm-line').css('stroke', '#ffcc99');
+            $('.top-line').css('stroke', '#99ffff');
+            $('.mid-line').css('stroke', '#ffff99');
+            setTimeout(function () {
+              $('.overlay').fadeOut(2000);
+            }, 1000)
           }, 1000)
         }, 1000)
       }, 1000)
@@ -39,7 +47,7 @@ function intro() {
 
 function highlight(letter) {
   var lines = []
-  $('line').css('stroke', 'gray')
+  $('line').css('stroke', '#ccc')
   switch(letter) {
     case 'S':
       lines = [$('.top-line'), $('.diag-line'), $('.btm-line')];
