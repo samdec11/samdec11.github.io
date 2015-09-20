@@ -29,12 +29,7 @@ function intro() {
         setTimeout(function() {
           highlight('N');
           setTimeout(function() {
-            $('.left-line').css('stroke', '#ff9999');
-            $('.diag-line').css('stroke', '#99ff99');
-            $('.right-line').css('stroke', '#cc99ff');
-            $('.btm-line').css('stroke', '#ffcc99');
-            $('.top-line').css('stroke', '#99ffff');
-            $('.mid-line').css('stroke', '#ffff99');
+            $('line').css('stroke', 'black');
             setTimeout(function () {
               $('.overlay').fadeOut(2000);
             }, 1000)

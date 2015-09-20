@@ -1,12 +1,101 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 
-*, h1, h2, h3, h4, h5, h6 {
+/*top-level styles*/
+
+* {
   font-family: 'Work Sans', sans-serif;
 }
 
 a {
   color: #FF9900;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+line {
+  stroke: #ccc;
+  stroke-width: 2;
+}
+
+p {
+  font-size: 17px;
+}
+
+section:after {
+  content: '';
+  background-image: url('../images/backgrounds/gplay.png');
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+td {
+  vertical-align: middle;
+}
+
+/*class styles*/
+
+.big-gear {
+  position: fixed;
+  top: -250px;
+  left: -250px;
+  width: 35%;
+  height: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.little-gear {
+  position: fixed;
+  top: 176px;
+  left: 53px;
+}
+
+.logo-presenter td {
+  text-align: center;
+}
+
+.me {
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/me.jpg');
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-size: contain;
 }
 
 .overlay {
@@ -19,43 +108,17 @@ a {
   z-index: 1;
 }
 
-table {
-  width: 100%;
-  height: 100%;
-}
-
-td {
-  vertical-align: middle;
-}
-
-table.logo-presenter td {
-  text-align: center;
-}
-
-line {
-  stroke: #ccc;
-  stroke-width: 2;
-}
-
-.hide {
-  display: none;
-}
-
-.big-gear {
-  position: fixed;
-  top: -250px;
-  left: -250px;
-  width: 35%;
-  height: auto;
-}
-
-.little-gear {
-  position: fixed;
-  top: 176px;
-  left: 53px;
+.subheader {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tech {
   height: 150px;
   width: auto;
+}
+
+.text-centered {
+  text-align: center;
 }
