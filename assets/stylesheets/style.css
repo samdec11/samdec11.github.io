@@ -9,6 +9,12 @@
 a {
   color: #FF9900;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: black;
+  opacity: 0.5;
 }
 
 h1 {
@@ -36,8 +42,9 @@ h6 {
 }
 
 line {
-  stroke: #ccc;
+  stroke: #fff;
   stroke-width: 2;
+  transition: stroke 0.5s;
 }
 
 p {
@@ -114,11 +121,25 @@ td {
   margin-right: auto;
 }
 
-.tech {
-  height: 150px;
-  width: auto;
+.tn-lg {
+  position: relative;
+  left: -20px;
+}
+
+.tn-sm {
+  text-align: center;
 }
 
 .text-centered {
   text-align: center;
+}
+
+/*section-specific styles*/
+
+#tech a {
+  color: black;
+}
+
+#tech a:hover {
+  color: #FF9900;
 }

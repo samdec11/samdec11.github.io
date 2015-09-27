@@ -19,7 +19,6 @@ $(function() {
 });
 
 function intro() {
-  $('svg').fadeIn(2000);
   setTimeout(function() {
     highlight('S');
     setTimeout(function() {
@@ -29,11 +28,11 @@ function intro() {
         setTimeout(function() {
           highlight('N');
           setTimeout(function() {
-            $('line').css('stroke', 'black');
+            $('line').css('stroke', '#000');
             setTimeout(function () {
-              $('.overlay').fadeOut(2000);
+              $('.overlay').fadeOut(2250);
             }, 1000)
-          }, 1000)
+          }, 1500)
         }, 1000)
       }, 1000)
     }, 1000)
@@ -42,7 +41,7 @@ function intro() {
 
 function highlight(letter) {
   var lines = []
-  $('line').css('stroke', '#ccc')
+  $('line').css('stroke', '#fff')
   switch(letter) {
     case 'S':
       lines = [$('.top-line'), $('.diag-line'), $('.btm-line')];
