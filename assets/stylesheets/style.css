@@ -59,9 +59,8 @@ section:after {
   height: 50px;
 }
 
-table {
-  width: 100%;
-  height: 100%;
+small {
+  font-size: 10px;
 }
 
 td {
@@ -70,22 +69,33 @@ td {
 
 /*class styles*/
 
-.big-gear {
-  position: fixed;
-  top: -250px;
-  left: -250px;
-  width: 35%;
-  height: auto;
+.exp-images {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exp-images td {
+  width: 50%;
 }
 
 .hide {
   display: none;
 }
 
-.little-gear {
+.logo {
+  width: 50px;
   position: fixed;
-  top: 176px;
-  left: 53px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.logo-presenter {
+  width: 100%;
+  height: 100%;
 }
 
 .logo-presenter td {
@@ -119,6 +129,18 @@ td {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+h1.title {
+  margin-bottom: 0;
+}
+
+h3.title {
+  margin-top: 0;
 }
 
 .tn-lg {
