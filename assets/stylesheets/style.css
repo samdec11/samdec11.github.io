@@ -14,7 +14,7 @@ a {
 
 a:hover {
   color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 h1 {
@@ -42,7 +42,7 @@ h6 {
 }
 
 line {
-  stroke: #fff;
+  stroke: transparent;
   stroke-width: 2;
   transition: stroke 0.5s;
 }
@@ -126,9 +126,11 @@ td {
 }
 
 .subheader {
-  width: 50%;
+  width: 51%;
+  min-width: 220px;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
 }
 
 .title {
@@ -139,7 +141,7 @@ h1.title {
   margin-bottom: 0;
 }
 
-h3.title {
+h4.title {
   margin-top: 0;
 }
 

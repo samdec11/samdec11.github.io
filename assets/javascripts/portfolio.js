@@ -25,7 +25,7 @@ function intro() {
 
 function highlight(letter) {
   var lines = []
-  $('line').css('stroke', '#fff')
+  $('line').css('stroke', 'transparent')
   switch(letter) {
     case 'S':
       lines = [$('.top-line'), $('.diag-line'), $('.btm-line')];
@@ -41,6 +41,6 @@ function highlight(letter) {
       break;
   }
   for(i = 0; i < lines.length; i++) {
-    lines[i].css('stroke', 'red')
+    lines[i].css('stroke', '#000')
   }
 };
