@@ -1,142 +1,266 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>SMM's Portfolio</title>
-  <link rel="stylesheet" href="assets/download/foundation/stylesheets/foundation.min.css" />
-  <link rel="stylesheet" href="assets/download/foundation/stylesheets/app.css" />
-  <link rel="stylesheet" href="assets/stylesheets/style.css" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico" />
-
-  <script src="assets/download/foundation/javascripts/modernizr.foundation.js"></script>
-  <script src="assets/download/foundation/javascripts/foundation.min.js"></script>
-  <script src= "assets/javascripts/portfolio.js"></script>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width' />
+  <title>Sean MM | Full-Stack Ruby on Rails Developer</title>
+  <link rel='stylesheet' href='assets/downloads/bootstrap.css' />
+  <link rel='stylesheet' href='assets/stylesheets/style.css' />
+  <link rel='shortcut icon' href='assets/images/favicon.ico' />
 </head>
 <body>
-  <div class="fixed">
-    <nav class="top-bar">
-      <ul>
-        <li class="name"><h1><a href="#">smm</a></h1></li>
-        <li class="toggle-topbar"><a href="#"></a></li>
-      </ul>
-      <section>
-        <ul class="right">
-          <li><a href="#" id='about'>About Me</a></li>
-          <li><a href="#" id='proj'>Projects</a></li>
-          <li><a href="#" id='cont'>Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+  <div class='overlay'>
+    <table class='logo-presenter'>
+      <td>
+        <svg width='447' height='400'>
+          <line x1='2' y1='399' x2='150' y2='2' class='left-line' />
+          <line x1='150' y1='2' x2='298' y2='399' class='diag-line' />
+          <line x1='298' y1='399' x2='446' y2='2' class='right-line' />
+          <line x1='2' y1='399' x2='298' y2='399' class='btm-line' />
+          <line x1='150' y1='2' x2='446' y2='2' class='top-line' />
+          <line x1='77' y1='200' x2='223' y2='200' class='mid-line' />
+        </svg>
+      </td>
+    </table>
   </div>
-  <div class='row' id='aboutme'>
-    <div class='twelve columns'>
-      <h3>About Me</h3>
-        <p>Sean Marzug-McCarthy is a full-stack Ruby on Rails developer, a graduate of the <a href="https://generalassemb.ly/education/128/web-development-immersive">Web Development Immersive Course</a> (WDI) at <a href="https://generalassemb.ly/">General Assembly</a>, and currently works as a Software Engineer at <a href="https://www.chloeandisabel.com/">Chloe + Isabel</a>.</p>
-      <hr />
-    </div>
+  <div class='logo'>
+    <img src='assets/images/logo.png'>
   </div>
-  <div class="row">
-    <div class ='twelve columns'>
-      <h3 id='projects'>Projects</h3>
-      <p>We've learned an immense amount of information in only a few months. The similarly large number of projects we've completed in that time has given us ample opportunity to practice and solidify concepts covered in class. Here are a few examples:</p>
-    </div>
-  </div>
-  <div class ='row'>
-    <div class="six columns">
-      <div class='ptitle'>Books</div>
-      <div class='images' style='background-image: url("assets/images/books.jpg")'>
-        <a href='https://github.com/samdec11/books' target='_blank'><div class='code'>Code</div></a>
-        <a href='http://my-books-site.herokuapp.com/' target='_blank'><div class='site'>Site</div></a>
+  <section id='about'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='me'></div>
+          <h1 class='title'>Sean Marzug-McCarthy</h1>
+          <h4 class='title'>Full-Stack Ruby on Rails Developer</h4>
+          <p class='subheader'>
+            I am a linguist-turned-software-engineer living in Brooklyn. I love archtecting and building strong backend foundations and frontend interfaces, always striving for the best possible end-user experience.
+          </p>
+        </div>
       </div>
-      <p>This app was my first practice with creating and using Rails databases. It was also one of my better implementations of simple and neat CSS.</p>
     </div>
-    <div class="six columns">
-      <div class='ptitle'>Rent-A-Pad</div>
-      <div class='images' style='background-image: url("assets/images/rap.jpg")'>
-        <a href='https://github.com/samdec11/rent-a-pad' target='_blank'><div class='code'>Code</div></a>
-        <a href='http://rent-a-pad.herokuapp.com/' target='_blank'><div class='site'>Site</div></a>
+  </section>
+  <section id='tech'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h3>Technologies I currently work with:</h3>
+        </div>
       </div>
-      <p>This was one of my more in-depth projects. Designed as a social networking site for people to find roommates in Manhattan, it sports one of my first fully-functional login systems, pulls information from the <a href='http://www.zillow.com/howto/api/APIOverview.htm' target='_blank'>Zillow API</a>, and shows off my then-newly-acquired <a href='http://jquery.com/' target ='_blank'>jQuery</a> and <a href='http://jqueryui.com/' target ='_blank'>jQuery UI</a> skills.</p>
-    </div>
-  </div>
-  <div class='row'>
-    <div class="six columns">
-      <div class='ptitle'>Meet Me Halfway</div>
-
-      <div class='images' style='background-image: url("assets/images/hlfwy.jpg")'>
-        <a href='https://github.com/samdec11/hlfwy' target ='_blank'><div class='code'>Code</div></a>
-        <a href='http://hlfwy.herokuapp.com/' target='_blank'><div class='site'>Site</div></a>
+      <div class='row'>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://aws.amazon.com/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/aws.png' class='img-responsive tech' alt='AWS' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>AWS</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>AWS</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='http://coffeescript.org/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/coffeescript.png' class='img-responsive tech' alt='CoffeeScript' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>CoffeeScript</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>CoffeeScript</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='http://www.w3.org/Style/CSS/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/css.png' class='img-responsive tech' alt='CSS3' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>CSS3</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>CSS3</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://git-scm.com/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/git.png' class='img-responsive tech' alt='Git' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>Git</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>Git</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='http://www.w3.org/html/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/html.png' class='img-responsive tech' alt='HTML5' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>HTML5</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>HTML5</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://jquery.com/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/jquery.png' class='img-responsive tech' alt='jQuery' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>jQuery</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>jQuery</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <p>This was a group project designed to make planning outings with friends easier. It allows someone to enter up to ten different addresses, uses the <a href='https://developers.google.com/maps/' target='_blank'>Google Maps API</a> to find the geographic center of those addresses, and then allows the person to run a search using the <a href='http://www.yelp.com/developers/documentation' target='_blank'>Yelp API</a> to find the top five results around that center.</p>
-    </div>
-    <div class="six columns">
-      <div class='ptitle'>Interviewr</div>
-      <div class='images' style='background-image: url("assets/images/interviewr.jpg")'>
-        <a href='https://github.com/bwreid/interviewr-wdi' target='_blank'><div class='code'>Code</div></a>
-        <a href='http://interviewr.herokuapp.com/' target='_blank'><div class='site'>Site</div></a>
-      </div>
-      <p>This was another group assignment, designed to test concepts we had learned. Built as an e-commerce site where people can create and purchase quizzes, Interviewr implements CoffeeScript, Google Maps, dataTables.js, Morris.js, Stripe, and image hosting on Amazon AWS.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="twelve columns">
-      <div class="panel" id="contact">
-        <h4>Get in touch!</h4>
-        <div class="row">
-          <div class="twelve columns">
-            <p>Feel free to follow me on any of the social networking sites below, or contact me directly by <a href='MAILTO:%20samdec11@gmail.com'>email</a>.</p>
+      <div class='row'>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/js.png' class='img-responsive tech' alt='JavaScript' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>JavaScript</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>JavaScript</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://www.mysql.com/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/mysql.png' class='img-responsive tech' alt='MySQL' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>MySQL</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>MySQL</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='http://rubyonrails.org/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/rails.png' class='img-responsive tech' alt='Rails' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>Rails</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>Rails</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://facebook.github.io/react/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/react.png' class='img-responsive tech' alt='React' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>React</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>React</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='http://rspec.info/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/rspec.png' class='img-responsive tech' alt='RSpec' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>RSpec</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>RSpec</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-2'>
+          <div class='row'>
+            <a href='https://www.ruby-lang.org/en/' target='_blank'>
+              <div class='col-md-6'>
+                <img src='assets/images/tech/ruby.png' class='img-responsive tech' alt='Ruby' />
+              </div>
+              <div class='col-md-6'>
+                <p class='tn-lg hidden-xs hidden-sm'>Ruby</p>
+                <p class='tn-sm visible-xs-block visible-sm-block'>Ruby</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="row">
-    <div class="twelve columns">
-      <hr />
-      <div class="row">
-        <div class="seven columns">
-          <p>&copy; SMM</p>
-        </div>
-        <div class="five columns">
-          <ul class="link-list right", id='network'>
-            <li>
-              <a href="https://twitter.com/sean_a_mm" target="_blank">
-                <img src='assets/images/networking/twitter.png'>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.linkedin.com/in/seanamm" target="_blank">
-                <img src='assets/images/networking/linkedin.png'>
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/samdec11' target='_blank'>
-                <img src='assets/images/networking/github.png'>
-              </a>
-            </li>
-            <li>
-              <a href='http://seanam-m.tumblr.com/' target='_blank'>
-                <img src='assets/images/networking/tumblr.png'>
-              </a>
-            </li>
-            <li>
-              <a href='MAILTO:%20samdec11@gmail.com'>
-                <img src='assets/images/networking/gmail.png'>
-              </a>
-            </li>
-          </ul>
+  </section>
+  <section id='experience'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h3>Experience</h3>
+          <table class='exp-images'>
+            <tr>
+              <td>
+                <img src='assets/images/candi.png' alt='c+i', title='c+i' class='img-responsive'>
+              </td>
+              <td>
+                <img src='assets/images/ga.png' alt='General Assembly' title='General Assembly' class='img-responsive'>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
+  </section>
+  <section id='contact'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <h3>Let's Connect!</h3>
+          <p>I'm currently working full-time at Chloe + Isabel, but I'm always open to networking and/or discussion of future opportunities. Feel free to message me via <a href='http://www.linkedin.com/in/seanamm' target='_blank'>LinkedIn</a> or email me directly at <a href='MAILTO:%20samdec11@gmail.com' target='_blank'>samdec11@gmail.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class='pull-left'>
+      <small>&copy; Sean A. Marzug-McCarthy, 2015. All rights reserved.</small>
+      <br />
+      <small>
+        Social icons by <a href='http://www.flaticon.com/authors/alessio-atzeni' target='_blank'>Alessio Atzeni</a>, <a href='http://www.freepik.com' target='_blank'>Freepik</a>, and <a href='http://www.flaticon.com/authors/zurb' target='_blank'>Zurb</a> from <a href='http://www.flaticon.com' target='_blank'>FlatIcon</a>.
+      </small>
+    </div>
+    <div class='pull-right'>
+      <a href='MAILTO:%20samdec11@gmail.com' target='_blank'>
+        <img src='assets/images/networking/email.png' alt='Email' title='Email' />
+      </a>
+      <a href='https://s3.amazonaws.com/portfolio-sean/resume.pdf' target='_blank'>
+        <img src='assets/images/networking/resume.png' alt='Resume' title='Resume' />
+      </a>
+      <a href='http://www.linkedin.com/in/seanamm' target='_blank'>
+        <img src='assets/images/networking/linkedin.png' alt='LinkedIn' title='LinkedIn' />
+      </a>
+      <a href='https://github.com/samdec11' target='_blank'>
+        <img src='assets/images/networking/github.png' alt='GitHub' title='GitHub' />
+      </a>
+    </div>
   </footer>
-  <script src="assets/download/foundation/javascripts/jquery.js"></script>
-  <script src="assets/download/foundation/javascripts/foundation.min.js"></script>
-  <script src="assets/download/foundation/javascripts/app.js"></script>
+  <script src='assets/downloads/jquery.js'></script>
+  <script src='assets/javascripts/portfolio.js'></script>
 </body>
 </html>
