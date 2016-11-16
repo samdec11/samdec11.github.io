@@ -1,31 +1,6 @@
-$(function() {
-  intro()
-});
-
-function intro() {
-  setTimeout(function() {
-    highlight('S');
-    setTimeout(function() {
-      highlight('E');
-      setTimeout(function() {
-        highlight('A');
-        setTimeout(function() {
-          highlight('N');
-          setTimeout(function() {
-            $('line').css('stroke', '#000');
-            setTimeout(function () {
-              $('.overlay').fadeOut(2250);
-            }, 1000)
-          }, 1500)
-        }, 1000)
-      }, 1000)
-    }, 1000)
-  }, 2000);
-};
-
 function highlight(letter) {
-  var lines = []
-  $('line').css('stroke', 'transparent')
+  var lines = [];
+  $('line').css('stroke', 'transparent');
   switch(letter) {
     case 'S':
       lines = [$('.top-line'), $('.diag-line'), $('.btm-line')];
@@ -40,7 +15,35 @@ function highlight(letter) {
       lines = [$('.left-line'), $('.diag-line'), $('.right-line')];
       break;
   }
-  for(i = 0; i < lines.length; i++) {
-    lines[i].css('stroke', '#000')
+  for (var i = 0; i < lines.length; i++) {
+    lines[i].css('stroke', '#000');
   }
-};
+}
+
+function intro() {
+  if (screen.width < 770) {
+    return $('.overlay').hide();
+  }
+  return setTimeout(function () {
+    highlight('S');
+    setTimeout(function () {
+      highlight('E');
+      setTimeout(function () {
+        highlight('A');
+        setTimeout(function () {
+          highlight('N');
+          setTimeout(function () {
+            $('line').css('stroke', '#000');
+            setTimeout(function () {
+              $('.overlay').fadeOut(2250);
+            }, 1000);
+          }, 1500);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 2000);
+}
+
+$(function () {
+  intro();
+});
