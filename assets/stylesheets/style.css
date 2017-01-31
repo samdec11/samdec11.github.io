@@ -123,6 +123,9 @@ td {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -webkit-transition: opacity 2500ms linear;
+  transition: opacity 2500ms linear
+
 }
 
 .subheader {
